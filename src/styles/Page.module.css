@@ -1,0 +1,93 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.pageContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+
+.content p {
+  margin: 15px 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.year {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffe066, #14b7ff);
+  color: #010814;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 20px 15px;
+  }
+
+  .pageContainer h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
